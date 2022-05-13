@@ -21,7 +21,7 @@ jobs:
         uses: JamesIves/github-sponsors-readme-action@v1.0.8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          file: 'sponsor.me.md'
+          file: 'README.md'
 
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
