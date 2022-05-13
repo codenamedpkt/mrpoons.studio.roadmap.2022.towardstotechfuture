@@ -19,12 +19,12 @@ jobs:
 
       - name: Generate Sponsors 💖
         uses: JamesIves/github-sponsors-readme-action@v1.0.8
-      - with:
+        with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          file: 'README.md'
+          file: 'sponsor.me.md'
 
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
-      - with:
+        with:
           branch: main
           folder: '.'
