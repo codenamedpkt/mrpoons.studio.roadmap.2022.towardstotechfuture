@@ -3,7 +3,7 @@ on:
   - pull_request
   - push
 jobs:
-  deploy:
+  Deploy-to-Your-README.md:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout 🛎️
