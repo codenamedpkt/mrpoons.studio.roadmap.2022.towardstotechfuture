@@ -1,6 +1,7 @@
-
 name: Add GitHub Sponsors to Readme
-on: [push]
+on:
+  - pull_request
+  - push
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,6 +13,8 @@ jobs:
         run: |
           pwd
           ls -a
+          ls -a .github
+          ls -a .github/workflows
           echo "Your GitHub secrets is ${{ secrets.GITHUB_TOKEN }}."
 
       - name: Generate Sponsors 💖
